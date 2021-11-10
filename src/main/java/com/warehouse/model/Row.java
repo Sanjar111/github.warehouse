@@ -1,6 +1,5 @@
 package com.warehouse.model;
 
-
 import io.swagger.v3.oas.annotations.media.Schema;
 
 public class Row {
@@ -16,7 +15,6 @@ public class Row {
     public Row() {
 
     }
-
     public Row(Integer row_id, Integer row_number, Integer total_level, Integer block_id, Integer[] subcategory_id_list, Integer status, String created_time) {
        this.row_id = row_id;
        this.row_number =row_number;
@@ -25,6 +23,7 @@ public class Row {
        this.subcategory_id_list = subcategory_id_list;
        this.status = status;
        this.created_time = created_time;
+
     }
     @Schema(hidden = true)
     public Integer getRow_id() {
@@ -62,11 +61,9 @@ public class Row {
     public Integer[] getSubcategory_id_list() {
         return subcategory_id_list;
     }
-
     public void setSubcategory_id_list(Integer[] subcategory_id_list) {
         this.subcategory_id_list = subcategory_id_list;
     }
-
     public Integer getStatus() {
         return status;
     }
